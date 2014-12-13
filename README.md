@@ -1,15 +1,20 @@
 Quantum-Computing-Playground
 ============================
+> Contributors: Trevor Davenport, Brian Freese
 
-Source code of qcplayground.withgoogle.com.
+#### General Overview ####
+```
+ Building off of QScript (quantumplayground.net), we will be making additions and 
+ modifications to the existing source code. This is the final project for 
+ UC Berkeley's CS164 Compilers Course.
 
-To deploy your own copy of Quantum Computing Playground:
+```
 
- - fork GitHub project
- - create Google AppEngine project (https://console.developers.google.com/project -> "Create Project")
- - enable Google Cloud Datastore API (APIS & AUTH -> APIs -> Google Cloud Datastore API -> "On")
- - link your GitHub project to GAE project (Source Code -> Releases -> Update -> "Configure Your Repository" -> "Connect a GitHub repo")
+#### Modifications & Optimizations ####
+```
+ 1) Desugarging of Bra-Kets notation
+ 2) Creating Gate Variable using Macros (SweetenJS)
+ 3) Implement functionality of a 'quantum' Lambda
 
-At this point each push into your GitHub project should initiate AppEngine deployment and the website will be accessible under: http://your-project-name.appspot.com
+```
 
-To populate examples create new scripts manually, record script identifiers from the playground URL, then paste them in module.js (see: https://github.com/gwroblew/Quantum-Computing-Playground/commit/745851aa9b466fdc4ef186cf26f8f99ca2d522fc).
